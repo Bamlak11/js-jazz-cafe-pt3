@@ -8,14 +8,16 @@ function totalCoffeeSold(sales){
     }
     return totalCoffee;
 }
-
+let coffeeSales = [7, 5, 7, 4];
+let totalSales = totalCoffeeSold(coffeeSales)
+console.log("Total coffes sold", totalSales)
 
 // Task 2: Implement a function to filter out decaf coffees from a list of coffee options
     // Use the filter method to filter out decaf coffee options
 
 function filterDecaf(options){
     let coffee =[];
-    for(const filterOption of filterOptions){
+    for(const filterOption of options){
         if (filterOption.decaf === false){
             coffee.push(filterOption);
         }
